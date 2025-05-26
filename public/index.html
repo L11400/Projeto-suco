@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suquinho Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container" id="loginPage">
+        <div class="header">
+            <div class="logo">🍹</div>
+            <h1>Bem-vindo ao Suquinho Store</h1>
+        </div>
+        <div class="form-container">
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" class="input-field">
+            <button id="entrarBtn" class="btn">Entrar</button>
+        </div>
+    </div>
+
+    <div class="container" id="mainPage" style="display: none;">
+        <div class="header">
+            <div class="logo">🍹</div>
+            <h1 id="welcomeMessage">Bem-vindo, Jefferson!</h1>
+        </div>
+        <div class="form-container">
+            <label for="suco">Escolha seu suco favorito:</label>
+            <select id="suco" class="input-field">
+                <option value="morango">Morango 🍓</option>
+                <option value="laranja">Laranja 🍊</option>
+                <option value="uva">Uva 🍇</option>
+                <option value="abacaxi">Abacaxi 🍍</option>
+                <option value="limao">Limão 🍋</option>
+            </select>
+            <button id="salvarSucoBtn" class="btn">Salvar Suco</button>
+        </div>
+
+        <div class="theme-container">
+            <span class="theme-icon">🌙</span>
+            <label for="tema">Tema:</label>
+            <select id="tema" class="input-field">
+                <option value="claro">Claro</option>
+                <option value="escuro">Escuro</option>
+            </select>
+        </div>
+
+        <div class="data-container">
+            <h2>📊 Dados:</h2>
+            <div class="data-item">
+                <span class="data-icon">👤</span>
+                <span>Nome: </span>
+                <span id="displayNome">Jefferson</span>
+            </div>
+            <div class="data-item">
+                <span class="data-icon">🔢</span>
+                <span>Visitas: </span>
+                <span id="displayVisitas">1</span>
+            </div>
+            <div class="data-item">
+                <span class="data-icon">📦</span>
+                <span>LocalStorage: </span>
+                <span id="displayLocalStorage">laranja</span>
+            </div>
+            <div class="data-item">
+                <span class="data-icon">🍪</span>
+                <span>Cookie: </span>
+                <span id="displayCookie">nenhum</span>
+            </div>
+            <div class="data-item">
+                <span class="data-icon">📝</span>
+                <span>Sucos favoritos (sessão): </span>
+                <span id="displaySucosFavoritos">nenhum</span>
+            </div>
+        </div>
+
+        <button id="sairBtn" class="btn btn-danger">Sair</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

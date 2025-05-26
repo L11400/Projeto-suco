@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 0.3s;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    transition: background-color 0.3s;
+}
+
+.dark-theme .container {
+    background-color: #444;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 2.5rem;
+    margin-right: 15px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.dark-theme h1 {
+    color: #fff;
+}
+
+.form-container {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.dark-theme label {
+    color: #ddd;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    transition: border 0.3s, background-color 0.3s;
+}
+
+.dark-theme .input-field {
+    background-color: #555;
+    border-color: #666;
+    color: #fff;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn-danger {
+    background-color: #f44336;
+}
+
+.btn-danger:hover {
+    background-color: #d32f2f;
+}
+
+.theme-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.theme-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.theme-container label {
+    margin: 0 10px 0 0;
+}
+
+.theme-container .input-field {
+    margin-bottom: 0;
+    flex-grow: 1;
+}
+
+.data-container {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 25px;
+    transition: background-color 0.3s;
+}
+
+.dark-theme .data-container {
+    background-color: #555;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.dark-theme h2 {
+    color: #fff;
+}
+
+.data-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.data-icon {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    width: 25px;
+    text-align: center;
+}
